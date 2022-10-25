@@ -648,17 +648,17 @@
 <p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x542F;&#x7528;UBSI&#x6CBB;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;UBSI&#x6838;&#x5FC3;&#x5305;&#x63D0;&#x4F9B;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF1A;</p>
 <ul>
 <li><p>rewin.ubsi.cli.Request - &#x63A5;&#x53E3;&#x8BBF;&#x95EE;&#x5DE5;&#x5177;</p>
-<pre><code>java -cp ubsi-core-ce-2.3.1-jar-with-dependencies.jar rewin.ubsi.cli.Request -h localhost -p 7112 ubsi.demo.hello hello requester
+<pre><code>java -cp ubsi-core-ce-2.3.2-jar-with-dependencies.jar rewin.ubsi.cli.Request -h localhost -p 7112 ubsi.demo.hello hello requester
 </code></pre></li>
 <li><p>rewin.ubsi.cli.Console - &#x5BA2;&#x6237;&#x7AEF;&#x4EA4;&#x4E92;&#x5DE5;&#x5177;</p>
-<pre><code>&gt; java -cp ubsi-core-ce-2.3.1-jar-with-dependencies.jar rewin.ubsi.cli.Console
+<pre><code>&gt; java -cp ubsi-core-ce-2.3.2-jar-with-dependencies.jar rewin.ubsi.cli.Console
 
 UBSI Consumer Console Utility, press ENTER for help
 
-localhost#7112&gt; service
+localhost#7112&gt; modules
 
-[1] &quot;&quot;: 2.3.0, rewin.ubsi.container.Controller, UBSI&#x5FAE;&#x670D;&#x52A1;&#x5BB9;&#x5668;&#x63A7;&#x5236;&#x5668;
-[1] ubsi.demo.hello: 1.0.0, ubsi.demo.hello.Service, UBSI&#x5FAE;&#x670D;&#x52A1;&#x793A;&#x4F8B;
+[1]        &quot;&quot;: [2.3.2-SNAPSHOT] rewin.ubsi.container.Controller, UBSI&#x5FAE;&#x670D;&#x52A1;&#x5BB9;&#x5668;&#x63A7;&#x5236;&#x5668;
+[1]        ubsi.demo.hello: [1.0.0] ubsi.demo.hello.Service, UBSI&#x5FAE;&#x670D;&#x52A1;&#x793A;&#x4F8B;
 
 localhost#7112&gt; request ubsi.demo.hello hello requester
 
@@ -716,7 +716,7 @@ localhost#7112&gt;
 </code></pre>
 <p>&#x8FD9;&#x4E2A;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x8868;&#x793A;&#xFF1A;&#x6240;&#x6709;&#x7684;&#x5FAE;&#x670D;&#x52A1;&#xFF08;&quot;*&quot;&#x4EE3;&#x8868;&#x901A;&#x914D;&#x7B26;&#xFF09;&#x7684;&#x8BBF;&#x95EE;&#x8BF7;&#x6C42;&#x90FD;&#x53D1;&#x9001;&#x5230;&quot;localhost#7112&quot;&#x5BB9;&#x5668;&#x8282;&#x70B9;&#x3002;</p>
 <p>&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x6D4B;&#x8BD5;&#xFF1A;</p>
-<p><code>java -cp ubsi-core-ce-2.3.1-jar-with-dependencies.jar;target\classes ubsi.demo.hello.Test</code></p>
+<p><code>java -cp ubsi-core-ce-2.3.2-jar-with-dependencies.jar;target\classes ubsi.demo.hello.Test</code></p>
 <p>&#x4F1A;&#x5F97;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1A;</p>
 <pre><code>return: ubsi: hello, consumer-sync
 code: 0, data: ubsi: hello, consumer-async
@@ -764,7 +764,7 @@ code: 0, data: ubsi: hello, consumer-async
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"观察及访问","level":"1.2.7","depth":2,"next":{"title":"过滤器开发","level":"1.3","depth":1,"path":"filter/readme.md","ref":"filter/readme.md","articles":[{"title":"过滤器Project","level":"1.3.1","depth":2,"path":"filter/project.md","ref":"filter/project.md","articles":[]},{"title":"容器端过滤器","level":"1.3.2","depth":2,"path":"filter/container.md","ref":"filter/container.md","articles":[]},{"title":"访问端过滤器","level":"1.3.3","depth":2,"path":"filter/consumer.md","ref":"filter/consumer.md","articles":[]},{"title":"部署及测试","level":"1.3.4","depth":2,"path":"filter/test.md","ref":"filter/test.md","articles":[]}]},"previous":{"title":"服务部署","level":"1.2.6","depth":2,"path":"develop/deploy.md","ref":"develop/deploy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","-sharing","search-pro","splitter","mermaid-gb3","-sectionx","chapter-fold","back-to-top-button","hide-element","livereload"],"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"develop/consumer.md","mtime":"2022-10-18T08:17:44.793Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-18T09:22:19.932Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"观察及访问","level":"1.2.7","depth":2,"next":{"title":"过滤器开发","level":"1.3","depth":1,"path":"filter/readme.md","ref":"filter/readme.md","articles":[{"title":"过滤器Project","level":"1.3.1","depth":2,"path":"filter/project.md","ref":"filter/project.md","articles":[]},{"title":"容器端过滤器","level":"1.3.2","depth":2,"path":"filter/container.md","ref":"filter/container.md","articles":[]},{"title":"访问端过滤器","level":"1.3.3","depth":2,"path":"filter/consumer.md","ref":"filter/consumer.md","articles":[]},{"title":"部署及测试","level":"1.3.4","depth":2,"path":"filter/test.md","ref":"filter/test.md","articles":[]}]},"previous":{"title":"服务部署","level":"1.2.6","depth":2,"path":"develop/deploy.md","ref":"develop/deploy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","-sharing","search-pro","splitter","mermaid-gb3","-sectionx","chapter-fold","back-to-top-button","hide-element","livereload"],"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"develop/consumer.md","mtime":"2022-10-25T09:47:39.310Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-25T09:56:26.689Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
