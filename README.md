@@ -1,2 +1,2 @@
-# open-ubsi.github.io
-open-ubsi home page
+# ubsice.github.io
+ubsice home page
